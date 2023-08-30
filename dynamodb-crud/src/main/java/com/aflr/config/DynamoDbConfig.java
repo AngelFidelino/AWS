@@ -22,9 +22,7 @@ public class DynamoDbConfig {
         Region region = Region.US_EAST_1;
         return DynamoDbClient.builder()
                 .region(region)
-                .credentialsProvider(EnvironmentVariableCredentialsProvider.create())
-               // .credentialsProvider(staticCredentialsProvider)
-                //.credentialsProvider(ContainerCredentialsProvider.builder().asyncCredentialUpdateEnabled(true).build())
+                //.credentialsProvider(EnvironmentVariableCredentialsProvider.create())
                 .build();
     }
 
